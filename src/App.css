@@ -1,0 +1,12 @@
+/* Styles globaux pour le portfolio de Muhamed Muvuma */
+body {
+  margin: 0;
+  background-color: #120a07;
+  color: #ffffff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
