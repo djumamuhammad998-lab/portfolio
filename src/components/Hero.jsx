@@ -28,7 +28,7 @@ export default function Hero() {
             download="CV_Muhamed_Muvuma_Djuma.pdf"
             className="border border-gray-600 hover:border-orange-500 text-gray-300 hover:text-white font-medium px-6 py-3 rounded-full transition duration-300 flex items-center gap-2"
 >
-    📥 Télécharger le CV
+  📥 Télécharger le CV
 </a>
         </div>
 
