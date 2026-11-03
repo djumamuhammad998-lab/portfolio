@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Hero() {
   return (
-    <section className="min-h-[85vh] bg-gradient-to-b from-[#120a07] via-[#1a0f0b] to-[#120a07] text-white px-8 md:px-16 flex items-center justify-between">
+    <section className="min-h-[85vh] bg-gradient-to-b from-[#120a07] via-[#1a0f0b] to-[#120a07] text-white px-8 md:px-16 flex flex-col lg:flex-row items-center justify-between py-12 lg:py-0">
       <div className="max-w-xl">
         <h1 className="text-4xl md:text-6xl font-extrabold mb-4 flex items-center gap-3">
           Hi, I'm Muhamed <span className="animate-bounce">👋</span>
@@ -49,8 +49,8 @@ export default function Hero() {
       </div>
 
       {/* Visuel avec la photo de profil dans l'arche orange */}
-      <div className="hidden lg:block relative mr-12">
-        <div className="w-80 h-96 bg-orange-500 rounded-b-[120px] rounded-t-[180px] relative overflow-hidden flex items-end justify-center shadow-2xl shadow-orange-500/20 border-4 border-orange-400">
+      <div className="mt-10 lg:mt-0 relative mr-0 lg:mr-12">
+        <div className="w-64 h-80 sm:w-72 sm:h-88 lg:w-80 lg:h-96 bg-orange-500 rounded-b-[120px] rounded-t-[180px] relative overflow-hidden flex items-end justify-center shadow-2xl shadow-orange-500/20 border-4 border-orange-400">
           <img 
             src="/muhamed.jpg" 
             alt="Muhamed Muvuma Djuma" 
