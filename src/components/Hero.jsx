@@ -1,5 +1,4 @@
 import React from 'react';
-import profileImg from '../assets/muhamed.jpg';
 
 export default function Hero() {
   return (
@@ -27,9 +26,9 @@ export default function Hero() {
             href="/CV_Muhamed_Muvuma.pdf"
             download="CV_Muhamed_Muvuma_Djuma.pdf"
             className="border border-gray-600 hover:border-orange-500 text-gray-300 hover:text-white font-medium px-6 py-3 rounded-full transition duration-300 flex items-center gap-2"
->
-  📥 Télécharger le CV
-</a>
+          >
+            📥 Télécharger le CV
+          </a>
         </div>
 
         {/* Statistiques */}
@@ -53,7 +52,7 @@ export default function Hero() {
       <div className="hidden lg:block relative mr-12">
         <div className="w-80 h-96 bg-orange-500 rounded-b-[120px] rounded-t-[180px] relative overflow-hidden flex items-end justify-center shadow-2xl shadow-orange-500/20 border-4 border-orange-400">
           <img 
-            src={profileImg} 
+            src="/muhamed.jpg" 
             alt="Muhamed Muvuma Djuma" 
             className="w-full h-full object-cover object-top"
           />
