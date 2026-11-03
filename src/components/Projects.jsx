@@ -7,8 +7,16 @@ const projects = [
     category: "Plateforme de Services IT",
     desc: "Structure offrant des services d'installation de systèmes, réseaux Starlink, et développement logiciel.",
     tech: ["IT Services", "Starlink", "Support"],
-    image: "/mhdtech.jpeg", // Assurez-vous que le nom correspond dans public/
-    link: "#"
+    image: "/mhdtech.jpeg",
+    hasDetails: true,
+    details: {
+      overview: "MHD TECH est une structure professionnelle spécialisée dans l'assistance informatique, le déploiement de solutions réseau et la transformation numérique.",
+      roles: [
+        { role: "Installation & Maintenance", desc: "Mise en place de systèmes d'exploitation et configuration de suites bureautiques." },
+        { role: "Réseaux Starlink", desc: "Installation et optimisation de kits de connexion Internet par satellite." },
+        { role: "Développement & Conseil", desc: "Création de logiciels sur-mesure et conseil en gestion de projets digitaux." }
+      ]
+    }
   },
   {
     id: "02",
@@ -16,7 +24,7 @@ const projects = [
     category: "Application Desktop",
     desc: "Logiciel de gestion commerciale et de stock multiplateforme développé sous Flutter et Dart.",
     tech: ["Flutter", "Dart", "Desktop"],
-    image: "/galaxymarket.PNG", // Mettez l'image correspondante dans public/
+    image: "/galaxymarket.PNG",
     hasDetails: true,
     details: {
       overview: "Galaxy-STOCK Pro est une solution complète de gestion commerciale et de stock multiplateforme avec une interface sécurisée et multi-rôles.",
@@ -33,8 +41,16 @@ const projects = [
     category: "IoT & Embarqué",
     desc: "Prototype de contrôle d'appareils à distance via application mobile et microcontrôleur Arduino[cite: 8].",
     tech: ["Arduino", "Bluetooth", "Android"],
-    image: "/projetdomotique.PNG", // Mettez l'image correspondante dans public/
-    link: "#"
+    image: "/projetdomotique.PNG",
+    hasDetails: true,
+    details: {
+      overview: "Prototype innovant de système domotique intelligent conçu pour le contrôle d'équipements domestiques à distance[cite: 8].",
+      roles: [
+        { role: "Modélisation UML", desc: "Conception formelle de l'architecture logicielle et matérielle[cite: 8]." },
+        { role: "Microcontrôleur Arduino", desc: "Gestion des signaux et commutation sécurisée des charges (éclairage, prises)[cite: 9]." },
+        { role: "Application Mobile Android", desc: "Interface de commande ergonomique connectée via un module Bluetooth[cite: 8, 9]." }
+      ]
+    }
   }
 ];
 
@@ -111,7 +127,7 @@ export default function Projects() {
         ))}
       </div>
 
-      {/* Fenêtre modale pour afficher les détails du projet Galaxy-STOCK Pro */}
+      {/* Fenêtre modale pour afficher les détails du projet sélectionné */}
       {selectedProject && (
         <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4">
           <div className="bg-[#1c110d] border border-orange-500/30 rounded-2xl max-w-xl w-full p-6 md:p-8 relative shadow-2xl">
@@ -134,7 +150,7 @@ export default function Projects() {
             </p>
 
             <h4 className="text-md font-semibold text-orange-500 mb-3">
-              Fonctionnalités des comptes :
+              Détails & Fonctionnalités :
             </h4>
 
             <div className="space-y-3 mb-6">
